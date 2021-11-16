@@ -1,0 +1,61 @@
+body{
+    height: 100vh;
+    background: hsla(152, 100%, 50%, 1);
+
+background: linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#00FF87", endColorstr="#60EFFF", GradientType=1 );
+}
+.container-fluid{
+    height: 100vh;
+}
+.container{
+    height: 70vh;
+    position: relative;
+    padding: 0;
+    width: 50%;
+}
+/* .container::before{
+    content: "<";
+    font-size: 2rem;
+    top: 20vh;
+    left: -1rem;
+
+} */
+.btn{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(12, 137, 153);
+    border:2px solid white;
+    font-size: 2rem;
+    z-index: 1;
+}
+.btn:hover{
+    color: white;
+    background-color:rgb(5, 97, 109);
+}
+.leftBtn{
+    top: 15rem;
+    left: -1rem;
+}
+.rightBtn{
+    top: 15rem;
+    right: -1rem;
+}
+.image{
+    height: 70vh;
+    width: 100%;
+ 
+    z-index: -1;
+}
+@media  (max-width:800px) {
+.container{
+    width: auto;
+    height: auto;
+}
+}
